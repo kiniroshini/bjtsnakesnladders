@@ -392,20 +392,20 @@ else{
 //yaha ek bracket extra hai if ke liye upar wala
 }
 // ekdam last wala snake bacha hia
-if(marginLeft()==froms[16][0] && marginTop()==froms[16][1]){
+if(marginLeft()==froms[17][0] && marginTop()==froms[17][1]){
     //idhar extra hai element 18 snake 7
     //20
     var txt;
     var person = prompt("given alpha: 0.5, what is beta?");
     if ( person == "1") {  
         //idhar tak
-document.querySelector(`#${turn}`).style.marginLeft=`${froms[16][0]}vmin`
-document.querySelector(`#${turn}`).style.marginTop=`${froms[16][1]}vmin`
+document.querySelector(`#${turn}`).style.marginLeft=`${froms[17][0]}vmin`
+document.querySelector(`#${turn}`).style.marginTop=`${froms[17][1]}vmin`
 await new Promise(resolve =>setTimeout(resolve,400))
 break}
 else{
-    document.querySelector(`#${turn}`).style.marginLeft=`${tos[16][0]}vmin`
-        document.querySelector(`#${turn}`).style.marginTop=`${tos[16][1]}vmin`
+    document.querySelector(`#${turn}`).style.marginLeft=`${tos[17][0]}vmin`
+        document.querySelector(`#${turn}`).style.marginTop=`${tos[17][1]}vmin`
         await new Promise(resolve =>setTimeout(resolve,400))
         break
     }
