@@ -353,20 +353,20 @@ else{
     }
 //yaha ek bracket extra hai if ke liye upar wala
 }
-if(marginLeft()==froms[16][0] && marginTop()==froms[16][1]){
+if(marginLeft()==froms[15][0] && marginTop()==froms[15][1]){
     //idhar extra hai element 16 snake 6
     //24
     var txt;
     var person = prompt("the collector current and base current of a CE configured BJT are 3.26mA and 20.42 microAmpere. Find the current amplification factor.");
     if ( person == "160") {  
         //idhar tak
-document.querySelector(`#${turn}`).style.marginLeft=`${froms[16][0]}vmin`
-document.querySelector(`#${turn}`).style.marginTop=`${froms[16][1]}vmin`
+document.querySelector(`#${turn}`).style.marginLeft=`${froms[15][0]}vmin`
+document.querySelector(`#${turn}`).style.marginTop=`${froms[15][1]}vmin`
 await new Promise(resolve =>setTimeout(resolve,400))
 break}
 else{
-    document.querySelector(`#${turn}`).style.marginLeft=`${tos[16][0]}vmin`
-        document.querySelector(`#${turn}`).style.marginTop=`${tos[16][1]}vmin`
+    document.querySelector(`#${turn}`).style.marginLeft=`${tos[15][0]}vmin`
+        document.querySelector(`#${turn}`).style.marginTop=`${tos[15][1]}vmin`
         await new Promise(resolve =>setTimeout(resolve,400))
         break
     }
