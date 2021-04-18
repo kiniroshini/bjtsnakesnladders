@@ -425,12 +425,15 @@ function move(direction){
   
     if(direction=='up'){
         document.querySelector(`#${turn}`).style.marginTop = String(marginTop()-9.8)+ 'vmin'
+        new Audio('https://github.com/M-AdilAhmad/snakes-and-ladders-game-media/blob/main/move.mp3?raw=true').play()
     }
     else if(direction =='right'){
         document.querySelector(`#${turn}`).style.marginLeft = String(marginLeft()+9.8)+ 'vmin'
+        new Audio('https://github.com/M-AdilAhmad/snakes-and-ladders-game-media/blob/main/move.mp3?raw=true').play()
     }
     else if(direction == 'left'){
         document.querySelector(`#${turn}`).style.marginLeft = String(marginLeft()-9.8)+ 'vmin'
+        new Audio('https://github.com/M-AdilAhmad/snakes-and-ladders-game-media/blob/main/move.mp3?raw=true').play()
     }
     await new Promise(resolve => setTimeout(resolve,400))
     resolve()
@@ -458,6 +461,7 @@ function marginTop(){
 function roll(){
     return new Promise(async(resolve,reject)=>{
     let diceNum = Math.floor(Math.random() *6) +1
+    new Audio('https://github.com/M-AdilAhmad/snakes-and-ladders-game-media/blob/main/diceRoll.mp3?raw=true').play()
     new Audio('https://github.com/M-AdilAhmad/snakes-and-ladders-game-media/blob/c7da50782ef3179b114dd5d6718962f9666520a7/diceRoll.mp3').play()
     let values = [[0,-360],[-180,-360],[-180,270],[0,-90],[270,180],[90,90]]
     document.querySelector('#cube_inner').style.transform = 'rotateX(360deg) rotateY(360deg)'
