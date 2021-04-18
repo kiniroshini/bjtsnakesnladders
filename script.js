@@ -48,8 +48,25 @@ function changeTurn(){
         turn = 'blue'
     }
 }
-
+let xxx=0
 function run(diceNum){
+    //ye naya hai
+    
+    if(xxx==0 || xxx==1){
+        return new Promise(async(resolve,reject)=>{
+            for(i=1;i<=(diceNum-1);i++){
+                let direction = getDirection()
+                await move(direction)
+            }
+            await checkLaddersAndSnakes()
+            resolve()
+            xxx=xxx+1
+        } 
+        )
+        
+
+    }//idhar tak
+    else{ // ye bhi naya hai
     return new Promise(async(resolve,reject)=>{
     for(i=1;i<=diceNum;i++){
         let direction = getDirection()
@@ -57,9 +74,8 @@ function run(diceNum){
     }
     await checkLaddersAndSnakes()
     resolve()
-})
+})}//ye pan
 }
-
 function checkLaddersAndSnakes(){
     return new Promise(async(resolve,reject)=>{
     //idhar ka bacha hai its not over yet
