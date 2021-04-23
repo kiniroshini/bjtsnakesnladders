@@ -145,7 +145,7 @@ if(marginLeft()==froms[3][0] && marginTop()==froms[3][1]){
     //idhar extra hai element 4 snake 1
     //40
     var txt;
-    var person = prompt("calculate the collector current(in mA) with the following values: Ic majority = 40mA, Ic minority = 0.3mA");
+    var person = prompt("calculate the collector current(in mA) with the following values: Ic majority = 40mA, Ic minority = 0.3mA; at 36.7 Degree Celcius");
     if (person == "40") {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${froms[3][0]}vmin`
@@ -202,8 +202,8 @@ if(marginLeft()==froms[6][0] && marginTop()==froms[6][1]){
     //idhar extra hai element 7 snake 2
     //42
     var txt;
-    var person = prompt("on applying KCL to the transistor, find the value for collector current(in units), given base current = 30 unit, emitter current = 40 units");
-    if (person == "10") {  
+    var person = prompt("transistor is fully on in ____ region");
+    if ((person == "saturation region") || (person == "saturation")) {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${froms[6][0]}vmin`
 document.querySelector(`#${turn}`).style.marginTop=`${froms[6][1]}vmin`
@@ -240,8 +240,8 @@ if(marginLeft()==froms[8][0] && marginTop()==froms[8][1]){
     //idhar extra hai element 9 snake 3
     //34
     var txt;
-    var person = prompt("does the emitter-base region matter in the cutoff region(yes/no)?");
-    if ( person == "no") {  
+    var person = prompt("The value of VBE in generally taken as _____ in active region? (in Volts)");
+    if (( person == "0.7") ||(person == "0.7 volts")) {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${froms[8][0]}vmin`
 document.querySelector(`#${turn}`).style.marginTop=`${froms[8][1]}vmin`
@@ -297,8 +297,8 @@ if(marginLeft()==froms[11][0] && marginTop()==froms[11][1]){
     //idhar extra hai element 12 ladder 9
     //29 A
     var txt;
-    var person = prompt("For saturation region, does VCE increase or decrease with IC?");
-    if ( person == "increase") {  
+    var person = prompt("name the configuration that gives high voltage gain but low current gain. (common base/common emitter/common collector)");
+    if ( person == "common base") {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${tos[11][0]}vmin`
 document.querySelector(`#${turn}`).style.marginTop=`${tos[11][1]}vmin`
@@ -335,8 +335,8 @@ if(marginLeft()==froms[13][0] && marginTop()==froms[13][1]){
     //idhar extra hai element 14 ladder 10
     //31 AN
     var txt;
-    var person = prompt("What is the current ICO - IC called?");
-    if ((person == "leakage current") || (person ="leakage")) {  
+    var person = prompt("name the region in which the BJT acts as a switch.(cutoff/saturation/both)");
+    if ((person == "both") || (person ="both of them")) {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${tos[13][0]}vmin`
 document.querySelector(`#${turn}`).style.marginTop=`${tos[13][1]}vmin`
@@ -392,8 +392,8 @@ if(marginLeft()==froms[16][0] && marginTop()==froms[16][1]){
     //idhar extra hai element 17 snake 7
     //20
     var txt;
-    var person = prompt("solve for Ic(in mA), for the cutoff region, if base current=40mA, emitter current=50mA");
-    if ( person == "0") {  
+    var person = prompt("for the given value of alpha: 0.5, find beta.");
+    if ( person == "1") {  
         //idhar tak
 document.querySelector(`#${turn}`).style.marginLeft=`${froms[16][0]}vmin`
 document.querySelector(`#${turn}`).style.marginTop=`${froms[16][1]}vmin`
